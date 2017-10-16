@@ -3,8 +3,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="elite.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src = "moment.js"></script>
   <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/af.js"></script>
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.min.css">
+  <link rel = "stylesheet" media="print" href = "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.print.css">
+
 </head>
 <body>
 
@@ -130,13 +137,57 @@
 <div class = "panel four">
   <div class = "container-fluid">
     <div class = "row">
-      <div class = "text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class = "text-center col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
         <h1>EVENTS</h1>
         <hr>
+        <div id = "calendar" style = "height: 400px; ">
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class = "panel five">
+  <div class = "container-fluid">
+    <div class = "row">
+      <div class = "text-center ">
 
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+    // page is now ready, initialize the calendar...
+    $('#calendar').fullCalendar({
+    header: {
+      left: 'prev,next,today',
+      center: 'title',
+      right: 'month,agendaWeek,agendaDay'
+    }
+    })
+});
+
+
+    $('#calendar').fullCalendar({
+    events: [
+        {
+            title  : 'Oktoberfest',
+            start  : '2017-10-01T12:00:00'
+        },
+        {
+            title  : 'Meet n Greet',
+            start  : '2017-10-24T14:30:00'
+        },
+        {
+            title  : 'event3',
+            start  : '2010-01-09T12:30:00',
+            allDay : false // will make the time show
+        }
+    ]
+});
+
+
+
+</script>
 </body>
 </html>

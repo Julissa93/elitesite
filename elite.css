@@ -5,7 +5,6 @@
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
-  overflow-x: hidden;
 }
 
 .panel.one{
@@ -16,15 +15,20 @@
 .panel.two{
   padding-top: 0px;
   height: 75%;
-  background-color: #e5e3e5;
+  background-color: #f9f9f9;
 }
 
 .panel.three{
-  height: 100%;
-  background-color: #6f7277	;
-  padding-top: 3%;
+  height: 87%;
+  background-color: #e5e3e5;
+  padding-top: 2%;
 }
 
+.panel.four{
+  height: 120%;
+  background-color: #f9f9f9;
+  padding-top: 2%;
+}
 nav{
   height: 9%;
   position: absolute;
@@ -71,6 +75,7 @@ nav{
 }
 
 .carousel-inner img{
+  height: 100%; 
   opacity: 0.35;
   object-fit: contain;
 }
@@ -114,23 +119,22 @@ hr{
 }
 
 .panel.three h3{
-  color: #ffffff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
 }
 
 .panel.three p{
-  color: #ffffff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-
 }
 
 .panel.three img{
-  border: 3px solid white;
+  border: 3px solid black;
 }
 
 .panel.three a{
-  color: #ffffff;
+  color: #000000;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -140,13 +144,18 @@ hr{
 }
 
 .officers h1{
-  color: #ffffff;
+  color: #000000;
   font-family: "Raleway", sans-serif;
 }
 
 .officers{
   padding-bottom: 5%;
 }
+
+.panel.four h1{
+  font-family: "Raleway", sans-serif;
+}
+
 	/*div{border: 1px solid blue;}
 
 	a{border: 1px solid red;}
