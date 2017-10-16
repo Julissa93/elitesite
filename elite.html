@@ -143,16 +143,18 @@
         <h1>EVENTS</h1>
         <hr>
         <div id = "calendar" style = "height: 400px; ">
-
+          <!--MODAL -->
           <div class="modal" role="dialog" id="modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">title</h4>
+                        <h4 class="text-center modal-title">title</h4>
                     </div>
                     <div class="modal-body"></div>
-                    <div class="modal-footer"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,17 +185,22 @@ $(document).ready(function() {
     events: [
         {
             title  : 'Meet n Greet',
-            start  : '2017-10-24T14:30:00'
+            start  : '2017-10-24T14:30:00',
+            end: '2017-10-24T15:30:00',
+            description: "Join us at ELiTe's first official club meeting in building 1N-111 at 2:30 PM! "
+
         },
         {
           title: "CUNY Internships Fair",
-          start: '2017-10-26T14:30:00'
+          start: '2017-10-26T14:30:00',
+          description: "Learn more about PAID STEM-related CUNY internships at this information session at building 2N - Rm 001. "
         }
     ],
 
     eventClick:  function(event) {
           var modal = $("#modal");
           modal.find(".modal-title").html(event.title);
+          modal.find(".modal-body").html(event.description);
           modal.modal();
 
        }
