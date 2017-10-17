@@ -38,10 +38,10 @@
   <div class = "container-fluid">
     <div class = "row">
       <div class="carousel-inner">
-            <img src="coder.jpg" alt="" class="img-responsive" >
-               <div class="carousel-caption">
-                 <h1>Welcome to<br> <span class = "bold">Empowering Ladies In Tech</span> </h1>
-               </div>
+        <img src="coder.jpg" alt="" class="img-responsive" >
+           <div class="carousel-caption">
+             <h1>Welcome to<br> <span class = "bold">Empowering Ladies In Tech</span> </h1>
+           </div>
       </div>
     </div>
   </div>
@@ -144,14 +144,17 @@
         <hr>
         <div id = "calendar" style = "height: 400px; ">
           <!--MODAL -->
-          <div class="modal" role="dialog" id="modal">
+          <div class="modal fade" role="dialog" id="modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="text-center modal-title">title</h4>
+                        <h2 class="text-center modal-title">title</h2>
                     </div>
-                    <div class="modal-body"></div>
+
+                      <h4 class = "description">Event Description: <br><span class = "modal-body"></span> </h4>
+                      <h4 class = "location">Location: <span class = "event-location"></span> </h4>
+                      <div class = "link"></div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
@@ -187,7 +190,9 @@ $(document).ready(function() {
             title  : 'Meet n Greet',
             start  : '2017-10-24T14:30:00',
             end: '2017-10-24T15:30:00',
-            description: "Join us at ELiTe's first official club meeting in building 1N-111 at 2:30 PM! "
+            description: "Join us at ELiTe's first official club meeting! ",
+            location: "Building 1N - 111",
+            link: "https://www.eventbrite.com/e/meet-greet-for-elite-tickets-38994679135"
 
         },
         {
@@ -201,6 +206,13 @@ $(document).ready(function() {
           var modal = $("#modal");
           modal.find(".modal-title").html(event.title);
           modal.find(".modal-body").html(event.description);
+          modal.find(".event-location").html(event.location);
+
+          if(event.link != 'undefined'){
+            modal.find(".link").html("<h4 class = 'link'>Link: <span class = 'linkToEvent'>" + event.link + " </span>");
+          }
+
+
           modal.modal();
 
        }
