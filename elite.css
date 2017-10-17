@@ -9,28 +9,28 @@
 
 .panel.one{
   height: 100%;
-  padding-bottom: 0px;
+
 }
 
 .panel.two{
-  padding-top: 0px;
-  height: 75%;
+  height: 45%;
   background-color: #f9f9f9;
+  padding-bottom: 5%;
 }
 
 .panel.three{
-  height: 87%;
+  height: 60%;
   background-color: #e5e3e5;
-  padding-top: 2%;
 }
 
 .panel.four{
+  padding-top: 2%;
+  padding-bottom: 2%;
   height: 120%;
   background-color: #f9f9f9;
-  padding-top: 2%;
 }
 nav{
-  height: 9%;
+  height: 6%;
   position: absolute;
 }
 
@@ -83,7 +83,7 @@ nav{
 }
 
 .carousel-inner h1{
-  transform: translate( -20px, -200px);
+  transform: translate( -20px, -450px);
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 70px;
@@ -158,6 +158,13 @@ hr{
   font-family: "Raleway", sans-serif;
 }
 
+.modal-title, .location, .link, .description{
+  font-weight: bold;;
+}
+
+.event-location, .modal-body, .linkToEvent{
+  font-weight: normal;
+}
 	/*div{border: 1px solid blue;}
 
 	a{border: 1px solid red;}
