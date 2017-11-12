@@ -66,7 +66,7 @@
 .footer{
   min-height: 30%;
   background-color: #b30000;
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 nav{
   min-height: 6%;
@@ -241,6 +241,20 @@ nav{
   vertical-align: middle;
 }
 
+.footer h3{
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+
+.social-media a{
+  color: #ffffff;
+  padding-right: 10px;
+}
+
+.social-media a:hover{
+  color: #5092fc;
+}
   /*div{border: 1px solid blue;}
 
 	a{border: 1px solid red;}
