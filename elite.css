@@ -10,6 +10,7 @@
 
 .panel.one{
   position: relative;
+  padding-top: 5%;
   min-height: 100%;
   background:
     linear-gradient(
@@ -26,9 +27,28 @@
 
 
 .panel.one h1{
-  font-size: 70px;
+  font-size: 100px;
   color: white;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 70%;
 }
+
+.title hr{
+  width: 45%;
+  color: #ffffff;
+  border-width: medium;
+}
+.title{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 2px 2px #000000;
+  font-weight:900;
+  padding-top: 28%;
+  width: 100%;
+}
+
+
 
 #elite a{
   font-size:40px;
@@ -98,22 +118,6 @@ nav{
   padding-top: 25px;
 }
 
-
-.title{
-  position: absolute;
-
-  font-family: 'Source Sans Pro', sans-serif;
-  text-shadow: 2px 2px #000000;
-  font-weight:900;
-  padding-top: 40%;
-  width: 100%;
-}
-
-.title h1{
-  /*background-color: rgba(0, 0, 0, 0.6);
-  /*border-radius: 10px;*/
-  border: 7px solid white;
-}
 
 .down-arrow{
   padding-top: 0;
@@ -255,6 +259,12 @@ nav{
 .social-media a:hover{
   color: #5092fc;
 }
+
+.subscribe{
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
   /*div{border: 1px solid blue;}
 
 	a{border: 1px solid red;}
