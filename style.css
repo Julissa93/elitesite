@@ -17,7 +17,7 @@
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.6)
     ),
-    url("grouppic.jpg");
+    url("images/grouppic.jpg");
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -161,7 +161,7 @@ nav{
 .meetings{
   min-height: 60%;
   position: relative;
-  background-image: url('laptop.png');
+  background-image: url('images/laptop.png');
   background-position: center;
   background-repeat: no-repeat;
  /*min-height: 100%;*/
