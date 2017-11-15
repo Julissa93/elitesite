@@ -8,6 +8,50 @@
   margin: 0;
 }
 
+/**************NAVBAR***********/
+nav{
+  min-height: 6%;
+  position: absolute;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: #000000;
+  padding-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  text-decoration: none;
+  /*border-bottom: 2px solid #f23e8c;*/
+  border-bottom: 2px solid #b30000;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+  text-decoration: none;
+  border-bottom: 2px solid #b30000;
+}
+
+.navbar-nav li a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px !important;
+  padding-top: 25px;
+}
+
+#navbarBrand{
+  line-height: 60px;
+}
+
+#navbarLogo{
+  float: left;
+  display: block;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+
+/***********landing page***********/
+
 .panel.one{
   position: relative;
   padding-top: 5%;
@@ -57,91 +101,13 @@
 }
 
 
+/***********ABOUT PAGE***********/
 .panel.two{
   min-height: 40%;
   background-color: #f9f9f9;
   /*background-color: #BC4966;
   /*background-color: #b30000;*/
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-
-
-}
-
-.panel.three{
-  padding-top: 2%;
-  padding-bottom: 5%;
-  min-height: 80%;
-  background-color: #e5e3e5;
-}
-
-.panel.four{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  height: 120%;
-  background-color: #f9f9f9;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
-
-.footer{
-  min-height: 30%;
-  background-color: #b30000;
-  opacity: 0.7;
-}
-nav{
-  min-height: 6%;
-  position: absolute;
-}
-
-.navbar-default .navbar-nav>li>a{
-  color: #000000;
-  padding-bottom: 0px;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-  text-decoration: none;
-  /*border-bottom: 2px solid #f23e8c;*/
-  border-bottom: 2px solid #b30000;
-
-}
-
-.navbar-default .navbar-nav>li>a:visited {
-  text-decoration: none;
-  border-bottom: 2px solid #b30000;
-}
-
-.navbar-nav li a {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px !important;
-  padding-top: 25px;
-}
-
-
-.down-arrow{
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.panel.three hr{
-  border-color: #b30000;
-  border-width: 2px;
-  width: 20%;
-}
-
-.circle{
-  width: 350px;
-  height: 350px;
-  background: #ff751a;
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  border-radius: 300px;
-  /*box-shadow: 0 5px 5px rgba(0,0,0,.5)*/
-  /*border-top: 1px solid #ffcc80;
-  border-left: 1px solid #ffcc80;
-  border-right: 1px solid #bb8020;
-  border-bottom: 1px solid #bb8020;*/
-  box-shadow: 2px 2px 6px rgba(170,31,0,0.2), 3px 8px 12px rgba(71,35,22,0.3);
 }
 
 .panel.two h1, p{
@@ -188,6 +154,30 @@ nav{
   color: #f23e8c;
 }
 
+
+/***********OFFICERS PAGE***********/
+.panel.three{
+  padding-top: 2%;
+  padding-bottom: 5%;
+  min-height: 80%;
+  background-color: #e5e3e5;
+}
+
+.officers h1{
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+}
+
+.officers{
+  padding-bottom: 5%;
+}
+
+.panel.three hr{
+  border-color: #b30000;
+  border-width: 2px;
+  width: 20%;
+}
+
 .panel.three h3{
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -213,13 +203,13 @@ nav{
   color: #b30000;
 }
 
-.officers h1{
-  color: #000000;
-  font-family: "Raleway", sans-serif;
-}
-
-.officers{
-  padding-bottom: 5%;
+/***********EVENTS PAGE***********/
+.panel.four{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 120%;
+  background-color: #f9f9f9;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .panel.four h1{
@@ -232,23 +222,18 @@ nav{
   width: 25%;
 }
 
-#navbarBrand{
-  line-height: 60px;
+/***********FOOTER***********/
 
-}
-
-#navbarLogo{
-  float: left;
-  display: block;
-  line-height: 60px;
-  vertical-align: middle;
+.footer{
+  min-height: 30%;
+  background-color: #b30000;
+  opacity: 0.7;
 }
 
 .footer h3{
   font-family: "Raleway", sans-serif;
   color: #ffffff;
 }
-
 
 .social-media a{
   color: #ffffff;
