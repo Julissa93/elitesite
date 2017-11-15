@@ -50,7 +50,7 @@ nav{
 }
 
 
-/***********landing page***********/
+/***********LANDING PAGE***********/
 
 .panel.one{
   position: relative;
@@ -247,6 +247,34 @@ nav{
 .subscribe{
   font-family: "Raleway", sans-serif;
   color: white;
+}
+
+/**************BLOG PAGE**************/
+
+.coming-soon{
+  padding-top: 60%;
+  position: relative;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px; 
+}
+
+.blog{
+  position: absolute;
+  padding-top: 5%;
+  min-height: 100%;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(255, 77, 77, 0.5)
+
+    ),
+    url("images/typing.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
   /*div{border: 1px solid blue;}
