@@ -49,9 +49,7 @@ nav{
   vertical-align: middle;
 }
 
-
 /***********LANDING PAGE***********/
-
 .panel.one{
   position: relative;
   padding-top: 5%;
@@ -67,7 +65,6 @@ nav{
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 .panel.one h1{
   font-size: 8em;
@@ -91,14 +88,11 @@ nav{
   width: 100%;
 }
 
-
-
 #elite a{
   font-size:40px;
   text-decoration:none;
   color: #000000;
 }
-
 
 /***********ABOUT PAGE***********/
 .panel.two{
@@ -121,37 +115,39 @@ nav{
   text-indent: 50px;
 }
 
-.meetings{
-  min-height: 60%;
-  position: relative;
-  background-image: url('images/laptop.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  /*min-height: 100%;*/
-  width: 100%;
-}
+
 .mission-block hr{
   border-color: #b30000;
   border-width: 2px;
   width: 40%;
 }
+
 .meetings-block hr{
   border-color: #b30000;
+  width: 20%;
   border-width: 2px;
-  width: 80%;
 }
+
+.meetings-block{
+  position: relative;
+  background-image: url('images/laptop.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  min-height: 50%;
+}
+
 .meetingsText{
   position: absolute;
-  padding-top: 15%;
-  padding-left: 30%;
-  /*transform: translate(0%, 0%);*/
+  text-align: center;
+
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
+
 .meetings h1{
   color: #f23e8c;
 }
-
 
 /***********OFFICERS PAGE***********/
 .panel.three{
