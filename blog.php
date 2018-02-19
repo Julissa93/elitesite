@@ -11,8 +11,13 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/jquery-ui.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body>
 
+<?php
+    include('fcns.php');
+?>
+
+<body style = "padding-top: 10%; ">
+<!-- NAV BAR -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class = "row">
@@ -27,24 +32,90 @@
             <li><a href = "index.html#p2">About</a></li>
             <li><a href="index.html#p3">Officers</a></li>
             <li><a href="index.html#p4">Events</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.php">Blog</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+<!-- END NAVBAR-->
 
-  <div class = "panel blog">
+<!--BEGIN BLOG-->
+
+  <div class = "panel-blog">
     <div class = "container-fluid" >
       <div class = "row">
-        <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-          <h1 class = "text-center coming-soon wow zoomIn">COMING SOON!</h1>
-          <hr class = "wow zoomIn">
+        <div class = "col-sm-3 col-md-3 col-lg-3">
+          <a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/ELiTe_CSI?ref_src=twsrc%5Etfw">Tweets by ELiTe_CSI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+
+          <?php
+            //show blog posts
+            if(!isset($_GET['page'])){
+              $page = 1;
+            }
+            else{
+              $page = $_GET['page'];
+            }
+            getBlogPosts($page);
+          ?>
+
         </div>
       </div>
     </div>
-  </div>
 
+    <div class = "row">
+        <nav class = "col-sm-6 col-md-6 col-lg-6 col-sm-offset-5 col-md-offset-5 col-lg-offset-5" aria-label="Page navigation">
+          <ul class="pagination">
+            <?php
+
+              if($page == 1){
+                echo"
+                  <li class = 'disabled'>
+                    <a href='' aria-label='Previous'>
+                      <span aria-hidden='true'>&laquo;</span>
+                    </a>
+                  </li>";
+                }
+              else {
+                echo"
+                  <li>
+                    <a href='blog.php?page=". ($page - 1) ."' aria-label='Previous'>
+                      <span aria-hidden='true'>&laquo;</span>
+                    </a>
+                  </li>";
+              }
+
+                //show page links
+                for($i = 1; $i <= getNumberOfPages(); $i++){
+                  echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
+                }
+
+              if($page == getNumberOfPages())
+              {
+                echo"
+                  <li class = 'disabled'>
+                    <a href='' aria-label='Next'>
+                      <span aria-hidden='true'>&raquo;</span>
+                    </a>
+                  </li>";
+              }
+              else {
+                echo"
+                  <li>
+                    <a href='blog.php?page=". ($page + 1) ."' aria-label='Next'>
+                      <span aria-hidden='true'>&raquo;</span>
+                    </a>
+                  </li>";
+              }
+
+            ?>
+          </ul>
+        </nav>
+    </div>
+  </div>
+<!-- END BLOG -->
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>new WOW().init();</script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
