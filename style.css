@@ -137,18 +137,18 @@ nav{
   min-height: 50%;
 }
 
-.meetingsText{
-  position: absolute;
-  text-align: center;
+.meetings-block h1{
+  padding-top: 10%;
+}
 
+.meetings-block h1, p{
+  position: relative;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
 }
 
-.meetings h1{
-  color: #f23e8c;
+.meetings-block p{
+  font-size: 1.2em; 
 }
-
 /***********OFFICERS PAGE***********/
 .panel.three{
   padding-top: 2%;
