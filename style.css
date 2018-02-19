@@ -114,7 +114,6 @@ nav{
   font-family: "Raleway", sans-serif;
   /*color: #ffffff;*/
   color: #000000;
-
 }
 
 #mission{
@@ -130,8 +129,8 @@ nav{
   background-image: url('images/laptop.png');
   background-position: center;
   background-repeat: no-repeat;
- /*min-height: 100%;*/
- width: 100%;
+  /*min-height: 100%;*/
+  width: 100%;
 }
 .mission-block hr{
   border-color: #b30000;
