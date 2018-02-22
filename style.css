@@ -9,6 +9,11 @@
   margin: 0;
 }
 
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+}
 /**************NAVBAR***********/
 nav{
   min-height: 6%;
@@ -50,6 +55,18 @@ nav{
 }
 
 /***********LANDING PAGE***********/
+@media screen and (max-width: 768px){
+  .panel.one h1{
+    padding-top: 70%;
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .panel.one h1{
+    font-size: 5.5em;
+  }
+}
 .panel.one{
   position: relative;
   padding-top: 5%;
@@ -67,8 +84,9 @@ nav{
 }
 
 .panel.one h1{
-  font-size: 8em;
+  /*font-size: 500%;*/
   color: white;
+  /*font-size: 5.5em;*/
   /*border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   /*border-width: 10%;*/
@@ -95,6 +113,18 @@ nav{
 }
 
 /***********ABOUT PAGE***********/
+@media screen and (max-width: 768px){
+  .panel.two p{
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .panel.two p{
+    font-size: 1.5em;
+  }
+}
+
 .panel.two{
   background-color: #f9f9f9;
   /*background-color: #BC4966;
@@ -110,11 +140,9 @@ nav{
 
 #mission{
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
   text-align: left;
   text-indent: 50px;
 }
-
 
 .mission-block hr{
   border-color: #b30000;
@@ -122,33 +150,13 @@ nav{
   width: 40%;
 }
 
-.meetings-block hr{
-  border-color: #b30000;
-  width: 20%;
-  border-width: 2px;
-}
-
 .meetings-block{
   position: relative;
-  background-image: url('images/laptop.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70% 70%;
-  min-height: 50%;
+  /*background-size: 90% 70%;*/
+  min-height: 60%;
+  min-width: 50%;
 }
 
-.meetings-block h1{
-  padding-top: 10%;
-}
-
-.meetings-block h1, p{
-  position: relative;
-  font-family: "Raleway", sans-serif;
-}
-
-.meetings-block p{
-  font-size: 1.2em; 
-}
 /***********OFFICERS PAGE***********/
 .panel.three{
   padding-top: 2%;
@@ -176,10 +184,22 @@ nav{
   font-family: "Raleway", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    .panel.three h3{
+      font-size:1.5em;
+    }
+    .panel.three p{
+      font-size: 1.0em;
+
+    }
+    .panel.three i{
+      font-size: 1.2em;
+    }
+}
+
 .panel.three p{
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
 }
 
 .panel.three img{
@@ -188,13 +208,14 @@ nav{
 
 .panel.three a{
   color: #000000;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .panel.three a:hover{
   color: #b30000;
 }
+
 
 /***********EVENTS PAGE***********/
 .panel.four{
@@ -214,6 +235,18 @@ nav{
   width: 25%;
 }
 
+.iframe-container{
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /***********FOOTER***********/
 
 .footer{
@@ -229,7 +262,7 @@ nav{
 
 .social-media a{
   color: #ffffff;
-  padding-right: 10px;
+  padding-right: 1.2em;
 }
 
 .social-media a:hover{
