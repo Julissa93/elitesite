@@ -123,6 +123,9 @@ nav{
   .panel.two p{
     font-size: 1.5em;
   }
+  .panel.two{
+    min-height: 80%;
+  }
 }
 
 .panel.two{
@@ -157,6 +160,9 @@ nav{
   min-width: 50%;
 }
 
+.meetings-block img{
+  opacity: 0.85;
+}
 /***********OFFICERS PAGE***********/
 .panel.three{
   padding-top: 2%;
