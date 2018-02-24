@@ -145,6 +145,7 @@ nav{
   font-family: "Raleway", sans-serif;
   text-align: left;
   text-indent: 50px;
+  min-height: 40%;
 }
 
 .mission-block hr{
