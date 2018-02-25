@@ -46,7 +46,8 @@
     <div class = "container-fluid" >
       <div class = "row">
         <div class = "col-sm-3 col-md-3 col-lg-3">
-          <a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/ELiTe_CSI?ref_src=twsrc%5Etfw">Tweets by ELiTe_CSI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/ELiTe_CSI?ref_src=twsrc%5Etfw">Tweets by ELiTe_CSI</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
 
@@ -113,6 +114,55 @@
             ?>
           </ul>
         </nav>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class = "footer">
+    <div class = "container-fluid">
+      <div class = "row">
+
+        <div class = "col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+          <h3> Made with &#9829; at: </h3><br>
+          <img src = "images/csi.png" class = "img-responsive" height = "80" width = "300">
+          <br><br>
+          <p style = "color: #ffffff; ">&#169; ELiTe 2017</p>
+        </div>
+
+        <div class = "col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+          <h3 class>Find us on: </h3>
+          <div class = "social-media">
+            <a href = "https://www.facebook.com/EmpoweringLadiesInTech/" target = "_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+            <a href = "https://twitter.com/ELiTe_CSI" target = "_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+            <br>
+            <a href = "https://orgsync.com/166094/chapter" target = "_blank"><img src = "images/csiconnect.png" class = "img-responsive" height = "80" width = "200"></a>
+          </div>
+        </div>
+
+        <!-- FORM FOR MAILING LIST -->
+        <div class = "col-xs4 col-sm-4 col-md-4 col-lg-4">
+
+          <form class = "form-inline subscribe " action="https://orgsync.us17.list-manage.com/subscribe/post?u=1b9aa85843835c7cf768b30b4&amp;id=fabaf9e337" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+            <h3>Subscribe to our mailing list</h3>
+            <div class = "input-group" >
+                <input type="email" value="" name="EMAIL" class="form-control required email " id="mce-EMAIL" placeholder = "Email" required = "required">
+                <span class = "input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="fa fa-send"></i>&nbsp;</button>
+                </span>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1b9aa85843835c7cf768b30b4_fabaf9e337" tabindex="-1" value=""></div>
+
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+      </div>
     </div>
   </div>
 <!-- END BLOG -->
