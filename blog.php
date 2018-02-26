@@ -88,7 +88,7 @@
                   </li>";
               }
 
-                //show page links
+              /*  //show page links
                 for($i = 1; $i <= getNumberOfPages(); $i++)
                 {
                   echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
@@ -110,7 +110,7 @@
                       <span aria-hidden='true'>&raquo;</span>
                     </a>
                   </li>";
-              }
+              }*/
 
             ?>
           </ul>

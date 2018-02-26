@@ -1,11 +1,12 @@
 <?php
-function connect2db(){
+function connect2db()
+{
   $servername = parse_url(getenv("us-cdbr-iron-east-05.cleardb.net"));
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
   mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_STRICT);
-  $result = new mysqli($servername, $username, $password, $db);
+  @ $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
          throw new Exception('Could not connect to database server');
@@ -15,13 +16,15 @@ function connect2db(){
        }
 }
 
-function getNumberOfPages(){
+function getNumberOfPages()
+{
   $limitPostsPerPage = 5;
   $numPages = ceil(getTotalNumPosts() / $limitPostsPerPage);
   return $numPages;
 }
 
-function getTotalNumPosts(){
+function getTotalNumPosts()
+{
   $conn = connect2db();
   $query = "select * from blog as b, users as u where b.userID = u.userID order by date desc;";
   $result = $conn->query($query);
@@ -29,7 +32,8 @@ function getTotalNumPosts(){
   return $totalNumResults;
 }
 
-function getBlogPosts($page){
+function getBlogPosts($page)
+{
   $conn = connect2db();
   $limitPostsPerPage = 5;
   $offset = ($page - 1) * $limitPostsPerPage;
