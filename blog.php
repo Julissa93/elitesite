@@ -90,6 +90,7 @@
 
                 //show page links
                 for($i = 1; $i <= getNumberOfPages(); $i++){
+                  echo "hi!!!"; 
                   echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
                 }
 

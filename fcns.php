@@ -4,14 +4,12 @@ function connect2db(){
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
-  echo phpversion();
   @ $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
          throw new Exception('Could not connect to database server');
        } else
        {
-         echo "connect success";
          return $result;
        }
 }
