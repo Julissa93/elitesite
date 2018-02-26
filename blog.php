@@ -89,9 +89,9 @@
               }
 
                //show page links
-                for($i = 1; $i <= 3; $i++)
+                for($i = 1; $i <= getNumberOfPages(); $i++)
                 {
-                  echo "$i";
+                  echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
                 }
 /*
               if($page == getNumberOfPages())

@@ -28,6 +28,7 @@ function getTotalNumPosts()
   $conn = connect2db();
   $query = "select * from blog as b, users as u where b.userID = u.userID order by date desc;";
   $result = $conn->query($query);
+  vardump($result); 
   $totalNumResults = $result->num_rows;
   return $totalNumResults;
 }
