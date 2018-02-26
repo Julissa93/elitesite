@@ -4,7 +4,7 @@ function connect2db(){
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
-  echo phpversion(); 
+  echo phpversion();
   @ $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
@@ -35,7 +35,7 @@ function getBlogPosts($page){
   $limitPostsPerPage = 5;
   $offset = ($page - 1) * $limitPostsPerPage;
   $query = "select * from blog as b, users as u where b.userID = u.userID order by date desc limit " .$offset. ", " . $limitPostsPerPage. "; ";
-  $result = $conn->query($query);
+  /*$result = $conn->query($query);
   if($result->num_rows > 0)
   {
       while($row = $result->fetch_assoc())
@@ -56,6 +56,6 @@ function getBlogPosts($page){
   }
   else {
       echo "not working!!!";
-  }
+  }*/
 }
 ?>
