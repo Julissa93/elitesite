@@ -30,6 +30,7 @@ function getTotalNumPosts()
   $result = $conn->query($query);
   vardump($result); 
   $totalNumResults = $result->num_rows;
+
   return $totalNumResults;
 }
 
