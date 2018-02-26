@@ -1,9 +1,9 @@
 <?php
 function connect2db(){
-  $servername = "localhost";
-  $username = "root";
-  $password = "root";
-  $db = "elite-db";
+  $servername = parse_url(getenv("us-cdbr-iron-east-05.cleardb.net"));
+  $username = "bbc52bf21f8514";
+  $password = "08558808";
+  $db = "heroku_29bbb9f48b3ae18";
   @ $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
@@ -38,7 +38,7 @@ function getBlogPosts($page){
   {
       while($row = $result->fetch_assoc())
       {
-        //note to self: make new page when user clicks "read more". 
+        //note to self: make new page when user clicks "read more".
         echo"<article>
             <h1 class = 'text-center'>".$row['title']."</h1>
             <strong class = 'text-center'>Author: ".$row['firstname']." ". $row['lastname']." </strong>
