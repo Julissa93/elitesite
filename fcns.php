@@ -33,7 +33,7 @@ function getBlogPosts($page){
   $limitPostsPerPage = 5;
   $offset = ($page - 1) * $limitPostsPerPage;
   //$query = "select * from blog as b, users as u where b.userID = u.userID order by date desc limit " .$offset. ", " . $limitPostsPerPage. "; ";
-  $query = "select * from blog;"
+  $query = "select * from blog;";
   $result = $conn->query($query);
   if($result->num_rows > 0)
   {
