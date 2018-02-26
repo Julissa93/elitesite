@@ -4,6 +4,7 @@ function connect2db(){
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
+  mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
   @ $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
