@@ -10,6 +10,7 @@ function connect2db(){
          throw new Exception('Could not connect to database server');
        } else
        {
+         echo "connect success"; 
          return $result;
        }
 }
