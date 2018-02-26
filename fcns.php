@@ -10,7 +10,7 @@ function connect2db(){
          throw new Exception('Could not connect to database server');
        } else
        {
-         echo "connect success"; 
+         echo "connect success";
          return $result;
        }
 }
@@ -35,6 +35,7 @@ function getBlogPosts($page){
   $offset = ($page - 1) * $limitPostsPerPage;
   $query = "select * from blog as b, users as u where b.userID = u.userID order by date desc limit " .$offset. ", " . $limitPostsPerPage. "; ";
   $result = $conn->query($query);
+  var_dump($result); 
   if($result->num_rows > 0)
   {
       while($row = $result->fetch_assoc())
