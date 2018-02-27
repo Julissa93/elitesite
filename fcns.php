@@ -1,7 +1,7 @@
 <?php
 function connect2db()
 {
-  $servername = parse_url(getenv('mysql://bbc52bf21f8514:08558808@us-cdbr-iron-east-05.cleardb.net/heroku_29bbb9f48b3ae18?reconnect=true'));
+  $servername = 'mysql://bbc52bf21f8514:08558808@us-cdbr-iron-east-05.cleardb.net/heroku_29bbb9f48b3ae18?reconnect=true';
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
