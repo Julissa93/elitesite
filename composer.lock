@@ -14,7 +14,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^5.4 || ^7.0",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "ext-mysql": "*"
     },
     "platform-dev": []
 }
