@@ -1,12 +1,12 @@
 <?php
 function connect2db()
 {
-  $servername = parse_url(getenv('DATABASE_URL'));
+  $servername = parse_url(getenv("DATABASE_URL"));
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
   mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_STRICT);
-  @ $result = new mysqli($servername, $username, $password, $db);
+  $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
          throw new Exception('Could not connect to database server');
