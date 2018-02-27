@@ -1,7 +1,7 @@
 <?php
 function connect2db()
 {
-  $servername = parse_url(getenv("DATABASE_URL"));
+  $servername = parse_url(getenv('DATABASE_URL'));
   $username = "bbc52bf21f8514";
   $password = "08558808";
   $db = "heroku_29bbb9f48b3ae18";
