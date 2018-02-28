@@ -15,26 +15,33 @@
 
 <body style = "padding-top: 10%; ">
 <!-- NAV BAR -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class = "row">
-        <div id = "elite" class = "col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <a href="index.html" class="nav navbar-left" id="navbarBrand" style = "font-size: 23px; ">
-            <img src="images/elitelogo.png" height = "60px" width = "55px" id="navbarLogo">ELiTe
-          </a>
-        </div>
-        <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#p1">Home</a></li>
-            <li><a href = "index.html#p2">About</a></li>
-            <li><a href="index.html#p3">Officers</a></li>
-            <li><a href="index.html#p4">Events</a></li>
-            <li><a href="blog.php">Blog</a></li>
-          </ul>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class = "row">
+      <div id = "elite" class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+        <a href="index.html" class="nav navbar-left" id="navbarBrand" style = "font-size: 23px; ">
+          <img src="images/elitelogo.png" class = "img-responsive" height = "60px" width = "55px" id="navbarLogo">ELiTe
+        </a>
+      </div>
+      <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      </div>
+      <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" >
+          <li><a href="#p1">Home</a></li>
+          <li><a href = "#p2">About</a></li>
+          <li><a href="#p3">Officers</a></li>
+          <li><a href="#p4">Events</a></li>
+          <li><a href="blog.php">Blog</a></li>
+        </ul>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 <!-- END NAVBAR-->
 
 <!--BEGIN BLOG-->

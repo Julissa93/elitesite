@@ -62,4 +62,6 @@ function getBlogPosts($page)
       echo "not working!!!";
   }
 }
+
+function
 ?>
