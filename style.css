@@ -305,6 +305,10 @@ nav{
   padding-left: 20%;
   padding-right: 50%;
 }
+
+.panel-blog{
+  padding-top: 10%; 
+}
   /*div{border: 1px solid blue;}
 
 	a{border: 1px solid red;}
