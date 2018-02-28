@@ -90,7 +90,7 @@
                 {
                   echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
                 }
-/*
+
               if($page == getNumberOfPages())
               {
                 echo"
@@ -107,7 +107,7 @@
                       <span aria-hidden='true'>&raquo;</span>
                     </a>
                   </li>";
-              }*/
+              }
 
             ?>
           </ul>
