@@ -13,7 +13,7 @@
     include('fcns.php');
 ?>
 
-<body style = "padding-top: 10%; ">
+<body>
 <!-- NAV BAR -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
