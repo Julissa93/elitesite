@@ -63,5 +63,4 @@ function getBlogPosts($page)
   }
 }
 
-function
 ?>
