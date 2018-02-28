@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .panel{
