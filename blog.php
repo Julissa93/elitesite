@@ -74,6 +74,7 @@
             else{
               $page = $_GET['page'];
             }
+            
             getBlogPosts($page);
           ?>
 

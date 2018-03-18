@@ -9,7 +9,7 @@ function connect2db()
   /*$servername = "localhost";
   $username = "root";
   $password = "root";
-  $db = "elite-db";
+  $db = "elite-db";*/
   $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
@@ -17,7 +17,7 @@ function connect2db()
        } else
        {
          return $result;
-       }*/
+       }
 }
 
 function getNumberOfPages()
