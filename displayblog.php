@@ -11,126 +11,63 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/jquery-ui.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-
-<?php
-    include('fcns.php');
-?>
-
 <body>
-<!-- NAV BAR -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class = "row">
-      <div id = "elite" class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-        <a href="index.html" class="nav navbar-left" id="navbarBrand" style = "font-size: 23px; ">
-          <img src="images/elitelogo.png" class = "img-responsive" height = "60px" width = "55px" id="navbarLogo">ELiTe
-        </a>
-      </div>
-      <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      </div>
-      <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" >
-          <li><a href="index.html#p1">Home</a></li>
-          <li><a href = "index.html#p2">About</a></li>
-          <li><a href="index.html#p3">Officers</a></li>
-          <li><a href="index.html#p4">Events</a></li>
-          <li><a href="blog.php">Blog</a></li>
-        </ul>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class = "row">
+        <div id = "elite" class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+          <a href="index.html" class="nav navbar-left" id="navbarBrand" style = "font-size: 23px; ">
+            <img src="images/elitelogo.png" class = "img-responsive" height = "60px" width = "55px" id="navbarLogo">ELiTe
+          </a>
+        </div>
+        <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        </div>
+        <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <ul class="nav navbar-nav navbar-right collapse navbar-collapse" >
+            <li><a href="index.html#p1">Home</a></li>
+            <li><a href = "index.html#p2">About</a></li>
+            <li><a href="index.html#p3">Officers</a></li>
+            <li><a href="index.html#p4">Events</a></li>
+            <li><a href="blog.php">Blog</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!-- END NAVBAR-->
-
-<!--BEGIN BLOG-->
+  </nav>
+  <!-- END NAVBAR-->
 
   <div class = "panel-blog">
-    <div class = "container-fluid" >
+    <div class = "container-fluid">
       <div class = "row heading">
         <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
           &nbsp;<br><br><br>
-          <h1 class = "animated fadeIn text-center"> Latest Articles </h1>
-          <!--<hr  class = "animated zoomIn">-->
+          <h1> Latest Articles </h1>
+          <hr  class = "animated zoomIn">
         </div>
       </div>
       &nbsp;
-      <div class = " animated fadeIn row" >
+      <div class = "row">
         <div class = "col-sm-3 col-md-3 col-lg-3 animated fadeIn">
           <a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/ELiTe_CSI?ref_src=twsrc%5Etfw">Tweets by ELiTe_CSI</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-
           <?php
-            //show blog posts
-            if(!isset($_GET['page'])){
-              $page = 1;
-            }
-            else{
-              $page = $_GET['page'];
-            }
-            getBlogPosts($page);
-          ?>
 
+          include('fcns.php');
+          getPost();
+
+          ?>
         </div>
       </div>
     </div>
-
-    <div class = "row">
-        <nav class = "col-sm-6 col-md-6 col-lg-6 col-sm-offset-5 col-md-offset-5 col-lg-offset-5" aria-label="Page navigation">
-          <ul class="pagination">
-            <?php
-
-              if($page == 1){
-                echo"
-                  <li class = 'disabled'>
-                    <a href='' aria-label='Previous'>
-                      <span aria-hidden='true'>&laquo;</span>
-                    </a>
-                  </li>";
-                }
-              else {
-                echo"
-                  <li>
-                    <a href='blog.php?page=". ($page - 1) ."' aria-label='Previous'>
-                      <span aria-hidden='true'>&laquo;</span>
-                    </a>
-                  </li>";
-              }
-
-               //show page links
-                for($i = 1; $i <= getNumberOfPages(); $i++)
-                {
-                  echo "<li><a href='blog.php?page=". $i ."'>". $i ."</a></li>";
-                }
-
-              if($page == getNumberOfPages())
-              {
-                echo"
-                  <li class = 'disabled'>
-                    <a href='' aria-label='Next'>
-                      <span aria-hidden='true'>&raquo;</span>
-                    </a>
-                  </li>";
-              }
-              else {
-                echo"
-                  <li>
-                    <a href='blog.php?page=". ($page + 1) ."' aria-label='Next'>
-                      <span aria-hidden='true'>&raquo;</span>
-                    </a>
-                  </li>";
-              }
-
-            ?>
-          </ul>
-        </nav>
-    </div>
+    &nbsp;
   </div>
 
   <!--FOOTER-->
@@ -181,13 +118,9 @@
       </div>
     </div>
   </div>
-<!-- END BLOG -->
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>new WOW().init();</script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
