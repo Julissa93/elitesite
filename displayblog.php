@@ -47,8 +47,8 @@
       <div class = "row heading">
         <div class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
           &nbsp;<br><br><br>
-          <h1> Latest Articles </h1>
-          <hr  class = "animated zoomIn">
+          <h1 class = "animated fadeIn text-center"> Latest Articles </h1>
+          <!--<hr  class = "animated zoomIn">-->
         </div>
       </div>
       &nbsp;
