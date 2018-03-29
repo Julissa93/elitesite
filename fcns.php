@@ -92,7 +92,7 @@ function getPost()
             <strong class = 'text-center'>Author: ".$row['firstname']." ". $row['lastname']." </strong>
             <br>
             <p class = 'date'>".$row['date']."</p>
-            <center><img src = 'images/elitehackathon.png' class = 'img-responsive' /></center>
+            <center><img src = ".$row['image']." class = 'img-responsive' /></center>
             &nbsp;
             <p class = 'blog_content'>". $row['body']. "
             </p>
