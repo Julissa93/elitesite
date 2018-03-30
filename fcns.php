@@ -2,14 +2,14 @@
 
 function connect2db()
 {
-  $servername = "us-cdbr-iron-east-05.cleardb.net";
+  /*$servername = "us-cdbr-iron-east-05.cleardb.net";
   $username = "bbc52bf21f8514";
   $password = "08558808";
-  $db = "heroku_29bbb9f48b3ae18";
-  /*$servername = "localhost";
+  $db = "heroku_29bbb9f48b3ae18";*/
+  $servername = "localhost";
   $username = "root";
   $password = "root";
-  $db = "elite-db";*/
+  $db = "elite-db";
   $result = new mysqli($servername, $username, $password, $db);
        if (mysqli_connect_errno())
        {
@@ -54,7 +54,7 @@ function getBlogPosts($page)
             <strong class = 'text-center'>Author: ".$row['firstname']." ". $row['lastname']." </strong>
             <br>
             <p class = 'date'>".$row['date']."</p>
-            <center><img src = 'data:image/jpeg;base64,'.base64_encode('.$row['image'].).'' class = 'img-responsive'/></center>
+            <center><img src = 'data:image/jpeg;base64,".base64_encode($row['image'])."' class = 'img-responsive'/></center>
             &nbsp;
 
             <p class = 'blog_content'>". substr($row['body'], 0, 300) . "...
@@ -92,7 +92,7 @@ function getPost()
             <strong class = 'text-center'>Author: ".$row['firstname']." ". $row['lastname']." </strong>
             <br>
             <p class = 'date'>".$row['date']."</p>
-            <center><img src = ".$row['image']." class = 'img-responsive' /></center>
+            <center><img src = 'data:image/jpeg;base64,".base64_encode($row['image'])."' class = 'img-responsive'/></center>
             &nbsp;
             <p class = 'blog_content'>". $row['body']. "
             </p>
