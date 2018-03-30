@@ -54,7 +54,7 @@ function getBlogPosts($page)
             <strong class = 'text-center'>Author: ".$row['firstname']." ". $row['lastname']." </strong>
             <br>
             <p class = 'date'>".$row['date']."</p>
-            <center><img src = 'data:image/jpeg;base64,'.base64_encode('.$row['image']).'' class = 'img-responsive'/></center>
+            <center><img src = 'data:image/jpeg;base64,'.base64_encode('.$row['image'].).'' class = 'img-responsive'/></center>
             &nbsp;
 
             <p class = 'blog_content'>". substr($row['body'], 0, 300) . "...
